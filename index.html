@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginSection">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginButton">Login</button>
+        <p id="loginError" style="color:red;"></p>
+    </div>
+
+    <div id="contactSection" style="display: none;">
+        <h2>Contact List</h2>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchBar" placeholder="Search by name or number">
+        <button id="logoutButton">Logout</button>
+<button id="importContacts">Import Contacts</button>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="number" placeholder="Phone Number">
+        <button id="addContact">Add Contact</button>
+
+        <ul id="contactList"></ul>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Contact List App. All rights reserved.</p>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to remove this contact?</p>
+            <button id="confirmYes">Yes</button>
+            <button id="confirmNo">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

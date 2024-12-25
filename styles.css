@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Contact Section */
+#contactSection {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar Styles */
+#searchBar {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#searchBar:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Input Fields and Buttons */
+input[type="text"], input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button#logoutButton {
+    background-color: #dc3545;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button#logoutButton:hover {
+    background-color: #c82333;
+}
+
+/* Contact List */
+ul#contactList {
+    list-style: none;
+    padding: 0;
+}
+
+ul#contactList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul#contactList li:last-child {
+    border-bottom: none;
+}
+
+/* Call Button Styles */
+.call-btn {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 5px;
+    
+}
+
+.call-btn:hover {
+    background-color: #218838;
+}
+
+/* Remove Button Styles */
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 2px 3px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 60px;
+    height:30px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensuring the footer stays at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+button#importContacts {
+    background-color: #17a2b8;
+    margin-bottom: 20px;
+}
+
+button#importContacts:hover {
+    background-color: #138496;
+}
